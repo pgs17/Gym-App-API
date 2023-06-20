@@ -1,7 +1,6 @@
 // index.js
 const express = require('express')
-
-const app = express()
+import app from './server.js'
 const PORT = 4000
 
 app.listen(PORT, () => {
