@@ -9,11 +9,11 @@ app.listen(PORT, () => {
 })
 
 app.get('/', (req, res) => {
-  res.send('Hey this is my API running 🥳')
+  res.send('GymApp App API')
 })
 
 app.get('/about', (req, res) => {
-  res.send('This is my about route..... ')
+  res.send('Simple API built for GymApp App')
 })
 
 // Export the Express API
