@@ -7,10 +7,10 @@ const userroutes =require('./Routes/User')
 const cors = require('cors')
 // express server
 const app = express()
-
+app.use(cors())
 // global middleware
 app.use(express.json())
-app.use(cors())
+
 //routes
 app.use('/api/workout', workoutroutes) // This Route works when localhost/api/workout/
 app.use('/api/user',userroutes)
