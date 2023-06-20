@@ -1,5 +1,4 @@
 require('dotenv').config()
-
 const mongoose = require('mongoose')
 const express = require('express')
 const workoutroutes = require('./Routes/Workout')
@@ -25,3 +24,6 @@ mongoose.connect(process.env.MONGODB_URI)
     .catch((error) => {
         console.log(error)
     })
+
+// export the express app
+module.exports = app
