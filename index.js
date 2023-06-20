@@ -9,7 +9,7 @@ app.listen(PORT, () => {
 })
 
 app.get('/', (req, res) => {
-  res.send('GymApp App API')
+  res.send('GymApp App API ')
 })
 
 app.get('/about', (req, res) => {
